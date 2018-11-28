@@ -1,0 +1,145 @@
+#!/data/data/com.termux/files/usr/bin/bash
+#    .---------- constant part!
+#    untuk jenis teks
+#    echo -e "\x1b[1m bold"
+#    echo -e "\x1b[30m black"
+#    echo -e "\x1b[31m red"
+#    echo -e "\x1b[32m green"
+#    echo -e "\x1b[33m yellow"
+#    echo -e "\x1b[34m blue"
+#    echo -e "\x1b[35m mag"
+#    echo -e "\x1b[36m cyan"
+#    echo -e "\x1b[37m white"
+#    echo -e "\x1b[0m io-std"
+#    echo -e "\x1b[1m bold"
+#    echo -e "\x1b[2m normal"
+#    echo -e "\x1b[3m italic"
+#    echo -e "\x1b[4m underlined"
+#    echo -e "\x1b[5m blinking"
+#    echo -e "\x1b[7m inverted"
+
+
+
+#clear
+toilet -f mono12 -F metal "SIXTEN"
+date|lolcat
+
+echo "------------------------------------------------------------"|lolcat
+echo "...::::::::[ Created by : Zaa Eka Gumilar ]::::::::..."|lolcat
+echo "Sebelum memilih,install bahannya dulu ketik 456 dan enter"|lolcat
+echo "------------------------------------------------------------"|lolcat
+
+date|lolcat
+echo ""
+     echo ""
+     echo "SILAHKAN PILIH     :        "|lolcat
+     echo "      (1) TOKOPEDIA         "|lolcat
+     echo "      (2) TELKOMSEL         "|lolcat
+     echo "      (3) MATAHARI MALL     "|lolcat
+     echo "      (4) HiLite            "|lolcat
+     echo "      (5) KK & KTP          "|lolcat
+echo ""
+     echo "(123) INFO"|lolcat
+     echo "(456) Install Bahan"|lolcat
+     echo "(000) Keluar "|lolcat
+
+echo""
+echo""
+echo "------------------------------------------------------------"|lolcat
+echo "Anda pilih yang mana?? ketik hanya nomornya saja dan enter"|lolcat
+read ezz
+if [ $ezz = 1 ] || [ $ezz = 01 ]
+then
+clear
+echo "\033[31;1m"
+toilet -f mono12 -F gay "TOKPED"
+cd /data/data/com.termux/files/home/.z/
+php tokped.php
+fi
+
+if [ $ezz = 2 ] || [ $ezz = 2 ]
+then
+clear
+echo "\033[36;1m"
+toilet -f  mono12 -F gay "TSEL"
+cd /data/data/com.termux/files/home/.z/
+php telkomsel.php
+fi
+
+if [ $ezz = 3 ] || [ $ezz = 3 ]
+then
+clear 
+echo  "\033[39;1m"
+toilet -f mono12 -F metal "MATMAL"
+cd /data/data/com.termux/files/home/.z/
+php mataharimall.php
+fi
+
+if [ $ezz = 4 ] || [ $ezz = 4 ]
+then
+clear
+echo "\033[39;1m"
+toilet -f mono12 -F metal "HILITE"
+cd /data/data/com.termux/files/home/.z/
+php hilite.php
+fi
+
+if [$ezz = 5 ] || [ $ezz = 5 ]
+then
+clear
+echo "\033[39;1m"
+toilet -f mono12 -F metal "KKKTP"
+cd /data/data/com.termux/files/home/.z/
+php kkktp.php
+fi
+
+if [ $ezz = 6 ] || [ $ezz = 6 ]
+then
+clear
+echo "\033[39;1m"
+toilet -f mono12 -F metal "TOKPED"
+cd /data/data/com.termux/files/home/.z/
+php tokped.php
+fi
+
+if [ $ezz = 123 ] || [ $ezz = 123 ]
+then 
+clear
+echo "\033[39;1m"
+toilet -f mono12 -F metal "INFO"
+echo "Dibuat oleh : "|lolcat
+echo "Zaa Eka Gumilar"|lolcat
+echo "versi 0.01"|lolcat
+echo "LIVE WITHOUT CONTROLS"|lolcat
+echo ""
+fi
+
+
+if [ $ezz = 456 ] || [ $ezz =456 ]
+then
+clear
+echo "Loading ----------------------------------"|lolcat
+cd /data/data/com.termux/files/home/.z/
+sh install.sh
+sh gco.sh
+fi
+
+if [ $ezz = 000 ] || [ $ezz =000 ]
+then
+clear
+echo "\033[39;1m"
+toilet -f mono12 -F metal "KELUAR"
+echo -e "\x1b[4m underlined terimakasih"|lolcat
+fi
+
+sleep 1
+echo " 1..."
+sleep 1
+echo " 2..."
+sleep 1
+echo " 3..."
+sleep 1
+clear
+exit
+fi
+
